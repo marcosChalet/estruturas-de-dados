@@ -90,6 +90,44 @@ bool inserirFim (Lista *ldde, struct aluno novosDados) {
 }
 
 
+bool inserirOrdenado (Lista *ldde, struct aluno novosDados) {
+
+    if(ldde == NULL)
+        return false;
+
+    Elemento *novo = (Elemento*)malloc(sizeof(Elemento));
+    if (novo == NULL)
+        return false;
+
+    novo->dados = novosDados;
+
+    if (*ldde == NULL || (*ldde)->dados.matricula > novosDados.matricula) {
+        /* Inserir no início. */
+        novo->ant = NULL;
+        novo->prox = *ldde;
+        if(*ldde != NULL)
+            (*ldde)->ant = novo;
+        *ldde = novo;
+    } else {
+        /* Inserir no meio ou no fim */
+        Elemento *ant = *ldde;
+        Elemento *aux = ant->prox;
+        while (aux != NULL && aux->dados.matricula < novosDados.matricula) {
+            ant = ant->prox;
+            aux = aux->prox;
+        }
+        ant->prox = novo;
+        if (aux != NULL) //caso seja adicionado no meio
+            aux->ant = novo;
+
+        novo->ant = ant;
+        novo->prox = aux;
+    }
+
+    return true;
+}
+
+
 void destruirLista (Lista *ldde) {
     if(ldde != NULL) {
         Elemento *aux;

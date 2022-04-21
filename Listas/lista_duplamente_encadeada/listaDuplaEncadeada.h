@@ -20,6 +20,7 @@ bool vazia (Lista *);
 
 bool inserirInicio (Lista *, struct aluno);
 bool inserirFim (Lista *, struct aluno);
+bool inserirOrdenado (Lista *, struct aluno);
 
 void destruirLista (Lista *);
 bool removerElemento (Lista *, int);
