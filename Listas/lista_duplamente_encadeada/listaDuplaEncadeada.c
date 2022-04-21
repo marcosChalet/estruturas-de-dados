@@ -212,11 +212,21 @@ void mostrar (Lista *ldde) {
     if(ldde == NULL) return;
     if((*ldde) == NULL) return;
 
+    /* Mostra do início até o fim */
     Elemento *aux = (*ldde);
     printf("Lista -> ");
-    while(aux) {
+    while(aux->prox != NULL) {
         printf("[%d] -> ", aux->dados.matricula);
         aux = aux->prox;
+    }
+    printf("[%d] -> ||\n", aux->dados.matricula);
+
+
+    /* Mostra do fim até o início */
+    printf("Lista -> ");
+    while(aux != NULL) {
+        printf("[%d] -> ", aux->dados.matricula);
+        aux = aux->ant;
     }
     printf("||\n");
 }
