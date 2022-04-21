@@ -1,6 +1,6 @@
 ## monitoria-ed
 
-Repositório para armazenar os códigos para a monitoria da cadeira de Estruturas de Dados. Turmas de Ciência da Computação e Matemática Computacioinal, na Universidade Federal do Cariri (UFCA).
+Repositório para armazenar os códigos para a monitoria da cadeira de Estruturas de Dados. Turmas de Ciência da Computação e Matemática Computacional, na Universidade Federal do Cariri (UFCA).
 
 ## Uso
 
@@ -18,7 +18,7 @@ gcc *.c *.h -o app
 ./app
 ```
 
-## Future
+## Features
 - [ ] Listas
   - [ ] Estática
   - [x] Dinâmica simplesmente encadeada
