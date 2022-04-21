@@ -193,19 +193,16 @@ bool removerFim (Lista *ldde) {
     if(ldde == NULL) return false;
     if(*ldde == NULL) return false;
 
-    Elemento *aux =  (*ldde);
-    if((*ldde)->prox == NULL) {
+    Elemento *aux = *ldde;
+    if((*ldde)->prox == NULL) { // há apenas um elemento.
         *ldde = (*ldde)->prox;
         free(aux);
     }else {
         Elemento *ant = *ldde;
-        aux = ant->prox;
-        while(aux->prox != NULL) {
-            ant = ant->prox;
+        while(aux->prox != NULL)
             aux = aux->prox;
-        }
 
-        ant->prox = aux->prox;
+        aux->ant->prox = NULL;
         free(aux);
     }
 
