@@ -19,25 +19,25 @@ gcc *.c *.h -o app
 ```
 
 ## Future
- Markup:- [ ] Listas
-- [ ] Estática
-- [x] Dinâmica simplesmente encadeada
-- [x] Dinâmica duplamente encadeada
+- [ ] Listas
+  - [ ] Estática
+  - [x] Dinâmica simplesmente encadeada
+  - [x] Dinâmica duplamente encadeada
 
-Markup:- [ ] Filas
-- [ ] Estática
-- [ ] Dinâmica
+- [ ] Filas
+  - [ ] Estática
+  - [ ] Dinâmica
 
-Markup:- [ ] Pilhas
-- [ ] Estática
-- [ ] Dinâmica
+- [ ] Pilhas
+  - [ ] Estática
+  - [ ] Dinâmica
 
-Markup:- [ ] Árvores
-- [ ] Binária de busca
-- [ ] AVL
-- [ ] RB
+- [ ] Árvores
+  - [ ] Binária de busca
+  - [ ] AVL
+  - [ ] RB
 
-Markup:- [ ] Ordenação
-- [ ] Insertion Sort
-- [ ] Bubble Sort
-- [ ] Merge Sort
+- [ ] Ordenação
+  - [ ] Insertion Sort
+  - [ ] Bubble Sort
+  - [ ] Merge Sort
