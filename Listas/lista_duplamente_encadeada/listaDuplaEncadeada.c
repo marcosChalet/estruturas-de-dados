@@ -76,12 +76,14 @@ bool inserirFim (Lista *ldde, struct aluno novosDados) {
     novo->dados = novosDados;
     novo->prox = NULL;
     if((*ldde) == NULL) {
+        novo->ant = NULL;
         (*ldde) = novo;
     }else {
         Elemento *aux = (*ldde);
         while(aux->prox != NULL)
                 aux = aux->prox;
         aux->prox = novo;
+        novo->ant = aux;
     }
 
     return true;
