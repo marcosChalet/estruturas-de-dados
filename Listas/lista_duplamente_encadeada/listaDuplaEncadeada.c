@@ -175,6 +175,13 @@ bool removerInicio (Lista *ldde) {
 
     Elemento *aux = *ldde;
     *ldde = (*ldde)->prox;
+
+    if (aux->prox != NULL) {
+        /* caso a lista tenha mais de um elemento, o ponteiro ant
+         * da elemento cabeça da lista deve apontar para NULL*/
+        aux->prox->ant = NULL;
+    }
+
     free(aux);
 
     return true;
