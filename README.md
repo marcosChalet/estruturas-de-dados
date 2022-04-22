@@ -6,7 +6,7 @@ Repositório para armazenar os códigos para a monitoria da cadeira de Estrutura
 
 ```sh
 cd path/para/o/programa/desejado/
-gcc *.c *.h -o app
+gcc *.c -o app
 ./app
 ```
 
@@ -14,7 +14,7 @@ gcc *.c *.h -o app
 
 ```sh
 cd Listas/lista_simplesmente_encadeada/
-gcc *.c *.h -o app
+gcc *.c -o app
 ./app
 ```
 
