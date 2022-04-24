@@ -19,8 +19,8 @@ gcc *.c -o app
 ```
 
 ## Features
-- [ ] Listas
-  - [ ] Estática
+- [x] Listas
+  - [x] Estática
   - [x] Dinâmica simplesmente encadeada
   - [x] Dinâmica duplamente encadeada
 
