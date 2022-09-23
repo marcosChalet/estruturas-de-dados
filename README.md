@@ -24,8 +24,8 @@ gcc *.c -o app
   - [x] Dinâmica simplesmente encadeada
   - [x] Dinâmica duplamente encadeada
 
-- [ ] Filas
-  - [ ] Estática
+- [x] Filas
+  - [x] Estática
   - [x] Dinâmica
 
 - [ ] Pilhas
