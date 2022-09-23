@@ -26,7 +26,7 @@ gcc *.c -o app
 
 - [ ] Filas
   - [ ] Estática
-  - [ ] Dinâmica
+  - [x] Dinâmica
 
 - [ ] Pilhas
   - [ ] Estática
