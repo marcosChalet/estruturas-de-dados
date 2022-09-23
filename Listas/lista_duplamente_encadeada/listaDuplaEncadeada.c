@@ -27,8 +27,9 @@ Lista* criar () {
     Lista *ldde;
     ldde = (Lista*)malloc(sizeof(Lista));
 
+    // Caso a alocação dê certo, seta como vazia o início da lista
     if (ldde != NULL)
-            *ldde = NULL;
+      *ldde = NULL;
 
     return ldde;
 }
