@@ -44,7 +44,7 @@ gcc *.c -o app
 
 - [ ] Pilhas
   - [ ] Estática
-  - [ ] Dinâmica
+  - [x] Dinâmica
 
 - [ ] Árvores
   - [ ] Binária de busca
