@@ -42,8 +42,8 @@ gcc *.c -o app
   - [x] Estática
   - [x] Dinâmica
 
-- [ ] Pilhas
-  - [ ] Estática
+- [x] Pilhas
+  - [x] Estática
   - [x] Dinâmica
 
 - [ ] Árvores
